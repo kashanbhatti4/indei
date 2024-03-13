@@ -8,47 +8,167 @@
     <title>Document</title>
   </head>
   <body class="bg-[#030014]">
-    <nav class="p-8 flex justify-between items-center">
+    <nav class="lg:p-8 p-3 bg-black lg:bg-transparent">
+      <div class="flex justify-between lg:items-center">
         <!-- Logo -->
         <div>
-            <img src="./assests/imgs/logo.png" alt="" />
+          <img src="./assests/imgs/logo.png" alt="" />
         </div>
-
         <!-- Hamburger Menu -->
         <div class="block lg:hidden">
-            <button id="menu-toggle"
-                class="">
-                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M33 7.5C33 6.67158 32.3284 6 31.5 6H12C11.1716 6 10.5 6.67158 10.5 7.5C10.5 8.32842 11.1716 9 12 9H31.5C32.3284 9 33 8.32842 33 7.5Z" fill="white"/>
-                    <path d="M33 18C33 17.1716 32.3284 16.5 31.5 16.5H4.5C3.67155 16.5 3 17.1716 3 18C3 18.8284 3.67155 19.5 4.5 19.5H31.5C32.3284 19.5 33 18.8284 33 18Z" fill="white"/>
-                    <path d="M31.5 27C32.3284 27 33 27.6716 33 28.5C33 29.3284 32.3284 30 31.5 30H19.5C18.6716 30 18 29.3284 18 28.5C18 27.6716 18.6716 27 19.5 27H31.5Z" fill="white"/>
-                    </svg>                  
-                    
-            </button>
+          <button id="menu-toggle" class="">
+            <svg
+              width="36"
+              height="36"
+              viewBox="0 0 36 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M33 7.5C33 6.67158 32.3284 6 31.5 6H12C11.1716 6 10.5 6.67158 10.5 7.5C10.5 8.32842 11.1716 9 12 9H31.5C32.3284 9 33 8.32842 33 7.5Z"
+                fill="white"
+              />
+              <path
+                d="M33 18C33 17.1716 32.3284 16.5 31.5 16.5H4.5C3.67155 16.5 3 17.1716 3 18C3 18.8284 3.67155 19.5 4.5 19.5H31.5C32.3284 19.5 33 18.8284 33 18Z"
+                fill="white"
+              />
+              <path
+                d="M31.5 27C32.3284 27 33 27.6716 33 28.5C33 29.3284 32.3284 30 31.5 30H19.5C18.6716 30 18 29.3284 18 28.5C18 27.6716 18.6716 27 19.5 27H31.5Z"
+                fill="white"
+              />
+            </svg>
+          </button>
         </div>
+        <!-- Desktop Menu Items -->
+        <div class="hidden lg:flex lg:items-center basis-1/3 justify-between">
+          <a href="#" class="poppins text-sm text-white">Home</a>
+          <a href="#" class="poppins text-sm text-white">How it works</a>
+          <a href="#" class="poppins text-sm text-white">About us</a>
+          <a href="#" class="poppins text-sm text-white">Pricing</a>
+          <a href="#" class="poppins text-sm text-white">Faq</a>
+        </div>
+        <div class="hidden lg:flex">
+          <a
+            href="#"
+            class="poppins text-sm bg-[#8000FF] text-white rounded-full px-12 py-3"
+            >Upgrade</a
+          >
+        </div>
+      </div>
 
-        <!-- Menu Items -->
-        <div id="menu"
-            class="hidden lg:flex lg:items-center basis-1/3 justify-between">
-            <a href="#" class="poppins text-sm text-white">Home</a>
-            <a href="#" class="poppins text-sm text-white">How it works</a>
-            <a href="#" class="poppins text-sm text-white">About us</a>
-            <a href="#" class="poppins text-sm text-white">Pricing</a>
-            <a href="#" class="poppins text-sm text-white">Faq</a>
-            <a href="#"
-                class="poppins text-sm bg-[#8000FF] text-white rounded-full px-12 py-3 lg:hidden ">Upgrade</a>
+      <!-- Mobile Menu Items -->
+      <div
+        id="menu"
+        class="hidden flex flex-col gap-5 pt-10 pb-5 justify-center text-center lg:hidden"
+      >
+        <a href="#" class="poppins text-sm text-white">Home</a>
+        <a href="#" class="poppins text-sm text-white">How it works</a>
+        <a href="#" class="poppins text-sm text-white">About us</a>
+        <a href="#" class="poppins text-sm text-white">Pricing</a>
+        <a href="#" class="poppins text-sm text-white">Faq</a>
+        <div class="mt-5">
+          <a
+            href="#"
+            class="poppins text-sm bg-[#8000FF] text-white rounded-full px-12 py-3 lg:hidden"
+            >Upgrade</a
+          >
         </div>
-
-        <div>
-            <a href="#"
-                class="poppins text-sm bg-[#8000FF] text-white rounded-full px-12 py-3 hidden lg:flex">Upgrade</a>
-        </div>
+      </div>
     </nav>
 
+    <section
+      class="bg-[url('./assests/imgs/herobg.png')] h-screen bg-center bg-cover bg-no-repeat"
+    >
+      <div class="lg:px-8 p-3 pt-16">
+        <h1 class="poppins text-white lg:text-6xl text-4xl font-semibold lg:leading-normal leading-snug ">
+          Know Your <span class="text-[#8000FF]">Game's Market </span> <br class="hidden md:block"/>
+          In Just A Few Clicks
+        </h1>
+        <p class="poppins text-white lg:text-lg text-sm  lg:pt-4  pt-2">
+          Plan the success of your upcoming game with data-driven insights
+          <br class="hidden md:block"/>
+          from steam and ai
+        </p>
+        <div class="lg:pt-16 pt-12">
+          <a
+            href="#"
+            class="poppins text-sm bg-[#8000FF] text-white rounded-full px-12 py-3"
+            >Try It now!</a
+          >
+        </div>
+      </div>
+
+      <div class="lg:px-8 p-3 lg:pt-24 pt-16 ">
+        <div class="flex items-center text-white flex-col lg:flex-row gap-8">
+          <!-- Accuracy -->
+          <div class="lg:text-start text-center " id="accuracy">
+            <p class="poppins lg:text-6xl text-5xl font-semibold leading-normal">0%</p>
+            <p class="poppins lg:text-xl text-lg">ACCURACY</p>
+          </div>
+          <!-- Games Coverage -->
+          <div class="lg:text-start text-center" id="gamesCoverage">
+            <p class="poppins lg:text-6xl text-5xl font-semibold leading-normal">0</p>
+            <p class="poppins lg:text-xl text-lg">GAMES COVERAGE</p>
+          </div>
+          <!-- Customer Ratings -->
+          <div class="lg:text-start text-center" id="customerRatings">
+            <p class="poppins lg:text-6xl text-5xl font-semibold leading-normal">0%</p>
+            <p class="poppins lg:text-xl text-lg">CUSTOMER RATINGS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script>
-        document.getElementById('menu-toggle').addEventListener('click', function () {
-            document.getElementById('menu').classList.toggle('hidden');
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("menu").classList.toggle("hidden");
         });
     </script>
-</body>
+
+    <script>
+      // Function to animate numbers
+      function animateValue(obj, start, end, duration) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+          if (!startTimestamp) startTimestamp = timestamp;
+          const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+          obj.innerHTML =
+            Math.floor(progress * (end - start) + start) +
+            (obj.id !== "gamesCoverage" ? "%" : "");
+          if (progress < 1) {
+            window.requestAnimationFrame(step);
+          }
+        };
+        window.requestAnimationFrame(step);
+      }
+
+      // Setup the Intersection Observer
+      const observer = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Animate numbers
+              if (entry.target.id === "accuracy")
+                animateValue(entry.target.children[0], 0, 87, 1000);
+              if (entry.target.id === "gamesCoverage")
+                animateValue(entry.target.children[0], 0, 5000, 1000);
+              if (entry.target.id === "customerRatings")
+                animateValue(entry.target.children[0], 0, 99, 1000);
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+
+      // Observe the elements
+      document
+        .querySelectorAll("#accuracy, #gamesCoverage, #customerRatings")
+        .forEach((item) => {
+          observer.observe(item);
+        });
+    </script>
+  </body>
 </html>
