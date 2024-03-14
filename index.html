@@ -8,80 +8,80 @@
     <title>Document</title>
   </head>
   <body class="bg-[#030014]">
-   
+    <!-- Hero section -->
 
     <section
-      class="bg-[url('./assests/imgs/herobg.png')] lg:h-[1279px] h-screen bg-center  bg-cover bg-no-repeat"
+      class="bg-[url('./assests/imgs/herobg.png')] lg:h-[1279px] h-screen bg-center bg-cover bg-no-repeat"
     >
-
-    <nav class="lg:p-8 p-3 bg-black lg:bg-transparent ">
-      <div class="flex justify-between lg:items-center">
-        <!-- Logo -->
-        <div>
-          <img src="./assests/imgs/logo.png" alt="" />
-        </div>
-        <!-- Hamburger Menu -->
-        <div class="block lg:hidden">
-          <button id="menu-toggle" class="">
-            <svg
-              width="36"
-              height="36"
-              viewBox="0 0 36 36"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
+      <!-- navbar -->
+      <nav class="lg:p-8 p-3 bg-black lg:bg-transparent">
+        <div class="flex justify-between lg:items-center">
+          <!-- Logo -->
+          <div>
+            <img src="./assests/imgs/logo.png" alt="" />
+          </div>
+          <!-- Hamburger Menu -->
+          <div class="block lg:hidden">
+            <button id="menu-toggle" class="">
+              <svg
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M33 7.5C33 6.67158 32.3284 6 31.5 6H12C11.1716 6 10.5 6.67158 10.5 7.5C10.5 8.32842 11.1716 9 12 9H31.5C32.3284 9 33 8.32842 33 7.5Z"
+                  fill="white"
+                />
+                <path
+                  d="M33 18C33 17.1716 32.3284 16.5 31.5 16.5H4.5C3.67155 16.5 3 17.1716 3 18C3 18.8284 3.67155 19.5 4.5 19.5H31.5C32.3284 19.5 33 18.8284 33 18Z"
+                  fill="white"
+                />
+                <path
+                  d="M31.5 27C32.3284 27 33 27.6716 33 28.5C33 29.3284 32.3284 30 31.5 30H19.5C18.6716 30 18 29.3284 18 28.5C18 27.6716 18.6716 27 19.5 27H31.5Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+          <!-- Desktop Menu Items -->
+          <div class="hidden lg:flex lg:items-center basis-1/3 justify-between">
+            <a href="#" class="poppins text-sm text-white">Home</a>
+            <a href="#" class="poppins text-sm text-white">How it works</a>
+            <a href="#" class="poppins text-sm text-white">About us</a>
+            <a href="#" class="poppins text-sm text-white">Pricing</a>
+            <a href="#" class="poppins text-sm text-white">Faq</a>
+          </div>
+          <div class="hidden lg:flex">
+            <a
+              href="#"
+              class="poppins text-sm bg-[#8000FF] text-white rounded-full px-12 py-3"
+              >Upgrade</a
             >
-              <path
-                d="M33 7.5C33 6.67158 32.3284 6 31.5 6H12C11.1716 6 10.5 6.67158 10.5 7.5C10.5 8.32842 11.1716 9 12 9H31.5C32.3284 9 33 8.32842 33 7.5Z"
-                fill="white"
-              />
-              <path
-                d="M33 18C33 17.1716 32.3284 16.5 31.5 16.5H4.5C3.67155 16.5 3 17.1716 3 18C3 18.8284 3.67155 19.5 4.5 19.5H31.5C32.3284 19.5 33 18.8284 33 18Z"
-                fill="white"
-              />
-              <path
-                d="M31.5 27C32.3284 27 33 27.6716 33 28.5C33 29.3284 32.3284 30 31.5 30H19.5C18.6716 30 18 29.3284 18 28.5C18 27.6716 18.6716 27 19.5 27H31.5Z"
-                fill="white"
-              />
-            </svg>
-          </button>
+          </div>
         </div>
-        <!-- Desktop Menu Items -->
-        <div class="hidden lg:flex lg:items-center basis-1/3 justify-between">
+
+        <!-- Mobile Menu Items -->
+        <div
+          id="menu"
+          class="hidden flex flex-col gap-5 pt-10 pb-5 justify-center text-center lg:hidden bg-black absolute w-full"
+        >
           <a href="#" class="poppins text-sm text-white">Home</a>
           <a href="#" class="poppins text-sm text-white">How it works</a>
           <a href="#" class="poppins text-sm text-white">About us</a>
           <a href="#" class="poppins text-sm text-white">Pricing</a>
           <a href="#" class="poppins text-sm text-white">Faq</a>
+          <div class="mt-5">
+            <a
+              href="#"
+              class="poppins text-sm bg-[#8000FF] text-white rounded-full px-12 py-3 lg:hidden"
+              >Upgrade</a
+            >
+          </div>
         </div>
-        <div class="hidden lg:flex">
-          <a
-            href="#"
-            class="poppins text-sm bg-[#8000FF] text-white rounded-full px-12 py-3"
-            >Upgrade</a
-          >
-        </div>
-      </div>
-
-      <!-- Mobile Menu Items -->
-      <div
-        id="menu"
-        class="hidden flex flex-col gap-5 pt-10 pb-5 justify-center text-center lg:hidden"
-      >
-        <a href="#" class="poppins text-sm text-white">Home</a>
-        <a href="#" class="poppins text-sm text-white">How it works</a>
-        <a href="#" class="poppins text-sm text-white">About us</a>
-        <a href="#" class="poppins text-sm text-white">Pricing</a>
-        <a href="#" class="poppins text-sm text-white">Faq</a>
-        <div class="mt-5">
-          <a
-            href="#"
-            class="poppins text-sm bg-[#8000FF] text-white rounded-full px-12 py-3 lg:hidden"
-            >Upgrade</a
-          >
-        </div>
-      </div>
-    </nav>
-
+      </nav>
+      <!-- Hero text -->
       <div class="lg:pt-32 lg:p-8 p-3 pt-16">
         <h1
           class="poppins text-white lg:text-6xl text-4xl font-semibold lg:leading-normal leading-snug"
@@ -90,7 +90,9 @@
           <br class="hidden md:block" />
           In Just A Few Clicks
         </h1>
-        <p class="poppins text-white lg:text-lg text-sm lg:leading-9 leading-6 lg:pt-4 pt-2">
+        <p
+          class="poppins font-light text-white lg:text-lg text-sm lg:leading-9 leading-6 lg:pt-4 pt-2"
+        >
           Plan the success of your upcoming game with data-driven insights
           <br class="hidden md:block" />
           from steam and ai
@@ -103,20 +105,20 @@
           >
         </div>
       </div>
-
-      <div class="lg:pt-32 lg:p-8 p-3   pt-16">
+      <!-- Hero Counter -->
+      <div class="lg:pt-32 lg:p-8 p-3 pt-16">
         <div class="flex items-center text-white flex-wrap lg:gap-20 gap-3">
           <!-- Accuracy -->
-          <div class="text-start " id="accuracy">
+          <div class="text-start" id="accuracy">
             <p
               class="poppins lg:text-6xl text-2xl font-semibold leading-normal"
             >
               0%
             </p>
-            <p class="poppins lg:text-xl text-sm pt-1 ">ACCURACY</p>
+            <p class="poppins lg:text-xl text-sm pt-1">ACCURACY</p>
           </div>
           <!-- Games Coverage -->
-          <div class="text-start " id="gamesCoverage">
+          <div class="text-start" id="gamesCoverage">
             <p
               class="poppins lg:text-6xl text-2xl font-semibold leading-normal"
             >
@@ -125,7 +127,7 @@
             <p class="poppins lg:text-xl text-sm pt-1">GAMES COVERAGE</p>
           </div>
           <!-- Customer Ratings -->
-          <div class="text-start " id="customerRatings">
+          <div class="text-start" id="customerRatings">
             <p
               class="poppins lg:text-6xl text-2xl font-semibold leading-normal"
             >
@@ -137,6 +139,41 @@
       </div>
     </section>
 
+    <!-- Discover  section -->
+
+    <section
+      class="bg-[url('./assests/imgs/mdiscoverbg.png')] md:bg-[url('./assests/imgs/discoverbg.png')]  lg:h-[1516px] lg:bg-center bg-bottom h-screen bg-cover bg-no-repeat"
+    >
+      <!-- Discover text -->
+      <div class="flex items-center justify-items-center">
+        <div class="2xl:basis-3/5  md:basis-3/5 lg:basis-3/5  lg:h-[1516px]"></div>
+      <div class="lg:basis-2/5 md:basis-2/5 xl:pr-48 md:pr-28  lg:pr-12 p-3 ">
+        <h2
+          class="poppins text-white xl:text-6xl  text-3xl font-semibold xl:leading-normal leading-snug"
+        >
+          Discover the Power of <span class="text-[#8000FF]">AI-Driven Insights </span>
+        </h2>
+        <p
+          class="poppins font-light text-white xl:text-xl text-sm xl:leading-10 leading-6 2xl:pt-4 pt-2"
+        >
+          At INDEINSIDER, we harness the potential of advanced algorithms and
+          artificial intelligence to provide comprehensive estimates of game
+          revenue, sales, player data, and more. Our platform is tailored for
+          game developers, market researchers, and avid gamers alike, delivering
+          unparalleled insights into the gaming industry.
+        </p>
+        <div class="lg:pt-16 pt-12">
+          <a
+            href="#"
+            class="poppins text-sm bg-[#8000FF] text-white rounded-full px-12 py-3"
+            >Start now!</a
+          >
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- javascript -->
     <script>
       document
         .getElementById("menu-toggle")
