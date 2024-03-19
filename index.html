@@ -305,9 +305,9 @@
     <!-- About section -->
 
     <section
-      class="bg-[url('./assests/imgs/aboutbg.png')] h-screen bg-center bg-cover bg-no-repeat flex flex-col justify-center items-center gap-20"
+      class="bg-[url('./assests/imgs/aboutbg.png')] h-screen bg-center bg-cover bg-no-repeat flex flex-col justify-center items-center xl:gap-20 gap-10"
     >
-
+     <!-- Heading  -->
     <div class="flex-col items-center lg:px-16 p-3">
       <h1
         class="poppins text-center text-white 2xl:text-5xl lg:text-4xl 2xl:leading-snug lg:leading-normal text-3xl leading-10 font-semibold"
@@ -328,39 +328,48 @@
       </p>
     </div>
 
-    <div class="flex justify-center items-center gap-32">
-      <div class="bg-[url('./assests/imgs/cardbg.png')]  bg-cover bg-no-repeat flex flex-col  justify-center gap-3">          
-        <div class="flex justify-center items-center gap-5">
-          <img src="./assests/imgs/rocket.png" alt="" />
-          <h3 class="text-white poppins uppercase font-light text-3xl">
-            Our Mission
-          </h3>
-        </div>
-        <p class="text-white text-center font-light text-lg px-14 leading-9">
-          Our goal is simple: revolutionize how game developers, researchers,
-          and fans understand game sales and player data. We provide accuracy
-          and invaluable insights, thanks to AI algorithms.
-        </p>
+    <!-- cards  -->
 
+    <div class=" flex justify-center items-center flex-col lg:flex-row  xl:gap-32 lg:gap-12 gap-8 px-8">
+      <div class="relative">
+        <img src="./assests/imgs/cardbg.png" alt="">          
+     <div class="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center gap-3 ">
+      <div class="flex justify-center items-center xl:gap-5 gap-2 ">
+        <img class="w-[30px] md:w-[40px] h-auto" src="./assests/imgs/rocket.png" alt="" />
+        <h3 class="text-white poppins uppercase font-light md:text-3xl text-xl">
+          Our Mission
+        </h3>
+      </div>
+      <p class="text-white text-center font-light xl:text-lg xl:leading-9 md:text-base text-sm xl:px-14 px-4 ">
+        Our goal is simple: revolutionize how game developers, researchers,
+        and fans understand game sales and player data. We provide accuracy
+        and invaluable insights, thanks to AI algorithms.
+      </p>
+
+     </div>
         
 
       </div>
-      <div class="bg-[url('./assests/imgs/cardbg.png')]  bg-cover bg-no-repeat flex flex-col  justify-center gap-3">          
-        <div class="flex justify-center items-center gap-5">
-          <img src="./assests/imgs/target.png" alt="" />
-          <h3 class="text-white poppins uppercase font-light text-3xl">
-            Who We Are
-          </h3>
-        </div>
-        <p class="text-white text-center font-light text-lg px-14 leading-9">
-          Our goal is simple: revolutionize how game developers, researchers,
-          and fans understand game sales and player data. We provide accuracy
-          and invaluable insights, thanks to AI algorithms.
-        </p>
+      <div class="relative">
+        <img src="./assests/imgs/cardbg.png" alt="">          
+     <div class="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center gap-3 ">
+      <div class="flex justify-center items-center xl:gap-5 gap-2 ">
+        <img class="w-[30px] md:w-[40px] h-auto" src="./assests/imgs/target.png" alt="" />
+        <h3 class="text-white poppins uppercase font-light md:text-3xl text-xl">
+          Who We Are
+        </h3>
+      </div>
+      <p class="text-white text-center font-light xl:text-lg xl:leading-9 md:text-base text-sm xl:px-14 px-4">
+        Our goal is simple: revolutionize how game developers, researchers,
+        and fans understand game sales and player data. We provide accuracy
+        and invaluable insights, thanks to AI algorithms.
+      </p>
 
+     </div>
         
 
       </div>
+   
       
       
     </div>
